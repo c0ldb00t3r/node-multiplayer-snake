@@ -12,7 +12,7 @@ node ('master'){
     /* This builds the actual image; synonymous to
          * docker build on the command line */
         //sh 'echo Buillding test'
-        app = docker.build("amrit96/snake")
+        app = docker.build("ctrohan/jenkins")
     }
     stage('Post-to-dockerhub') {
         //sh 'echo test_post_to_dockerhub'
